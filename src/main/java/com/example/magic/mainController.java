@@ -15,14 +15,14 @@ public class mainController {
         startNumber = numberInput.nextInt();
         int magicNumber = startNumber;
         do {
+            storeNumbers = storeNumbers + " " + magicNumber + " ";
             if (magicNumber % 2 == 0) {
                 magicNumber = (magicNumber/2);
             }else{
                 magicNumber = (3*magicNumber)+1;
             }
-            storeNumbers = storeNumbers + magicNumber;
         }while (magicNumber != 1);
-        System.out.println(storeNumbers);
+        System.out.println(storeNumbers + " 1");
     return null;
 
     }
